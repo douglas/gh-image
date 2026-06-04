@@ -12,6 +12,7 @@
   <a href="https://github.com/drogers0/gh-image/releases"><img src="https://img.shields.io/github/downloads/drogers0/gh-image/total?color=green" alt="Total downloads"></a>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/drogers0/gh-image?color=lightgrey" alt="License: MIT"></a>
   <a href="https://goreportcard.com/report/github.com/drogers0/gh-image"><img src="https://goreportcard.com/badge/github.com/drogers0/gh-image" alt="Go Report Card"></a>
+  <a href="https://skills.sh/drogers0/gh-image"><img src="https://skills.sh/b/drogers0/gh-image" alt="skills.sh"></a>
 </p>
 
 ---
@@ -80,6 +81,16 @@ $(gh image bug.png)
 
 Happens consistently after the third click."
 ```
+
+## Use with AI agents
+
+`gh-image` is packaged as an [agent skill](https://agentskills.io), so AI coding agents can upload and embed images for you — just ask in natural language, e.g. *"attach this screenshot to the PR"* or *"file an issue and add this image."*
+
+```bash
+npx skills add drogers0/gh-image
+```
+
+The open [Agent Skills standard](https://agentskills.io/clients) is supported by **Claude Code**, **OpenAI Codex**, **Cursor**, **GitHub Copilot**, and [many more](https://agentskills.io/clients). The skill walks the agent through installing this extension (if needed), running the upload, and embedding the resulting `user-attachments` URL into a PR, issue, or comment.
 
 ## Authentication
 
