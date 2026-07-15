@@ -8,10 +8,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/drogers0/gh-image/internal/cookies"
-	"github.com/drogers0/gh-image/internal/repo"
-	"github.com/drogers0/gh-image/internal/session"
-	"github.com/drogers0/gh-image/internal/upload"
+	"github.com/douglas/gh-image/internal/cookies"
+	"github.com/douglas/gh-image/internal/repo"
+	"github.com/douglas/gh-image/internal/session"
+	"github.com/douglas/gh-image/internal/upload"
 )
 
 const usage = `Usage:

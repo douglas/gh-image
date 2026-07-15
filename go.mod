@@ -1,4 +1,4 @@
-module github.com/drogers0/gh-image
+module github.com/douglas/gh-image
 
 go 1.26.1
 

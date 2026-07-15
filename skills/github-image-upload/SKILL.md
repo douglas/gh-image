@@ -16,7 +16,7 @@ license: MIT
 
 GitHub has **no public API** for attachment uploads — the web UI uses an internal
 endpoint that mints `user-attachments` URLs scoped to the repo's visibility.
-[`gh-image`](https://github.com/drogers0/gh-image) (MIT, © drogers0) replicates
+[`gh-image`](https://github.com/douglas/gh-image) (MIT, © drogers0) replicates
 that flow as a `gh` CLI extension, so you can upload images or other files (PDF,
 zip, log, …) from the terminal and get a ready-to-paste reference back — an
 `![name](url)` embed for images, a bare URL for videos (GitHub renders it as an
@@ -38,7 +38,7 @@ Run these checks; only act on the ones that fail.
 2. **The `gh-image` extension installed** (idempotent — skip if already present)
 
    ```bash
-   gh extension list | grep -q 'drogers0/gh-image' || gh extension install drogers0/gh-image
+   gh extension list | grep -q 'douglas/gh-image' || gh extension install douglas/gh-image
    ```
 
 3. **A GitHub session for the upload.** `gh-image` does NOT use the `gh` token for

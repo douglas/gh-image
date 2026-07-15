@@ -275,7 +275,7 @@ git push --tags
 → GitHub Actions triggers
   → GoReleaser cross-compiles
   → Attaches binaries to GitHub Release
-→ Users: gh extension install drogers0/gh-image
+→ Users: gh extension install douglas/gh-image
 ```
 
 ## Dependencies

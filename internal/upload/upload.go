@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/drogers0/gh-image/internal/cookies"
-	"github.com/drogers0/gh-image/internal/httputil"
+	"github.com/douglas/gh-image/internal/cookies"
+	"github.com/douglas/gh-image/internal/httputil"
 )
 
 // Result holds the output of a successful file upload.

@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/drogers0/gh-image/internal/httputil"
+	"github.com/douglas/gh-image/internal/httputil"
 )
 
 // uploadToS3 uploads the file to S3 using the presigned form fields from the policy.

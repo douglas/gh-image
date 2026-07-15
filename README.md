@@ -7,12 +7,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/drogers0/gh-image/releases/latest"><img src="https://img.shields.io/github/v/release/drogers0/gh-image?color=blue" alt="Latest release"></a>
-  <a href="https://github.com/drogers0/gh-image/stargazers"><img src="https://img.shields.io/github/stars/drogers0/gh-image?style=flat&color=yellow" alt="GitHub stars"></a>
-  <a href="https://github.com/drogers0/gh-image/releases"><img src="https://img.shields.io/github/downloads/drogers0/gh-image/total?color=green" alt="Total downloads"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/drogers0/gh-image?color=lightgrey" alt="License: MIT"></a>
-  <a href="https://github.com/drogers0/gh-image/actions/workflows/lint.yml"><img src="https://github.com/drogers0/gh-image/actions/workflows/lint.yml/badge.svg" alt="Lint"></a>
-  <a href="https://skills.sh/drogers0/gh-image"><img src="https://skills.sh/b/drogers0/gh-image" alt="skills.sh"></a>
+  <a href="https://github.com/douglas/gh-image/releases/latest"><img src="https://img.shields.io/github/v/release/douglas/gh-image?color=blue" alt="Latest release"></a>
+  <a href="https://github.com/douglas/gh-image/stargazers"><img src="https://img.shields.io/github/stars/douglas/gh-image?style=flat&color=yellow" alt="GitHub stars"></a>
+  <a href="https://github.com/douglas/gh-image/releases"><img src="https://img.shields.io/github/downloads/douglas/gh-image/total?color=green" alt="Total downloads"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/douglas/gh-image?color=lightgrey" alt="License: MIT"></a>
+  <a href="https://github.com/douglas/gh-image/actions/workflows/lint.yml"><img src="https://github.com/douglas/gh-image/actions/workflows/lint.yml/badge.svg" alt="Lint"></a>
+  <a href="https://skills.sh/douglas/gh-image"><img src="https://skills.sh/b/douglas/gh-image" alt="skills.sh"></a>
 </p>
 
 ---
@@ -30,7 +30,7 @@ $ gh image report.pdf
 ## Installation
 
 ```bash
-gh extension install drogers0/gh-image
+gh extension install douglas/gh-image
 ```
 
 That's it. The [`gh` CLI](https://cli.github.com) auto-detects your platform and downloads the prebuilt binary. Pre-built releases ship for **macOS** (arm64, amd64), **Linux** (amd64, arm64), and **Windows** (amd64).
@@ -39,7 +39,7 @@ That's it. The [`gh` CLI](https://cli.github.com) auto-detects your platform and
 <summary>Build from source</summary>
 
 ```bash
-git clone https://github.com/drogers0/gh-image
+git clone https://github.com/douglas/gh-image
 cd gh-image
 go build -o gh-image
 gh extension install .
@@ -94,7 +94,7 @@ Happens consistently after the third click."
 `gh-image` is packaged as an [agent skill](https://agentskills.io), so AI coding agents can upload and embed images or attach files for you — just ask in natural language, e.g. *"attach this screenshot to the PR"* or *"file an issue and attach this log."*
 
 ```bash
-npx skills add drogers0/gh-image
+npx skills add douglas/gh-image
 ```
 
 The open [Agent Skills standard](https://agentskills.io/clients) is supported by **Claude Code**, **OpenAI Codex**, **Cursor**, **GitHub Copilot**, and [many more](https://agentskills.io/clients). The skill walks the agent through installing this extension (if needed), running the upload, and embedding the resulting `user-attachments` URL into a PR, issue, or comment.
@@ -110,7 +110,7 @@ The open [Agent Skills standard](https://agentskills.io/clients) is supported by
 On macOS, a Keychain prompt may appear on first use to authorize access to your browser's cookie encryption key. Click **Always Allow** to skip future prompts.
 
 > [!NOTE]
-> **Windows + Chrome 127+:** Some versions of Chrome on Windows are not yet supported by the underlying cookie library. Use another browser or [investigate potential workarounds](https://github.com/drogers0/gh-image/issues/4).
+> **Windows + Chrome 127+:** Some versions of Chrome on Windows are not yet supported by the underlying cookie library. Use another browser or [investigate potential workarounds](https://github.com/douglas/gh-image/issues/4).
 
 ### Session token override
 
@@ -158,7 +158,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}              # for gh CLI auth
           GH_SESSION_TOKEN: ${{ secrets.GH_SESSION_TOKEN }}  # for the upload itself
         run: |
-          gh extension install drogers0/gh-image
+          gh extension install douglas/gh-image
           gh image check-token                                # optional: fail fast if the session expired
           gh image screenshot.png --repo ${{ github.repository }}
 ```
@@ -207,10 +207,10 @@ Before opening a PR, run `go test ./...` and `go vet ./...`.
 If `gh-image` saves you a few drag-and-drops, a ⭐ helps others find it:
 
 ```bash
-gh api --method PUT user/starred/drogers0/gh-image
+gh api --method PUT user/starred/douglas/gh-image
 ```
 
-(or just click the star at the [top of this page](https://github.com/drogers0/gh-image))
+(or just click the star at the [top of this page](https://github.com/douglas/gh-image))
 
 ## License
 
